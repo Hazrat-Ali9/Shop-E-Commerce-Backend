@@ -9,7 +9,7 @@ app.use(express.json());
 
 // mongodb
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-
+// Async Funtion
 async function run (){
     try{
         await client.connect();
