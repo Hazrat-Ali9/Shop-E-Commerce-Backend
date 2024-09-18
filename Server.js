@@ -7,7 +7,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://aurthohinparvez:2tdBD4q1zQnAt1ug@cluster0.4scykru.mongodb.net/?retryWrites=true&w=majority";
+// mongodb
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run (){
